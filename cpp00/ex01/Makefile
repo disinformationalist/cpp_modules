@@ -4,7 +4,7 @@ SRCS := phonebook.cpp
   
 CFLAGS := -Wall -Wextra -Werror -std=c++98
 
-CC := c++
+CXX := c++
 
 OBS := $(SRCS:.cpp=.o)
 
@@ -23,12 +23,12 @@ endef
 all: $(NAME)
 
 $(NAME): $(OBS)
-	$(CC) $(OBS) -o $(NAME)
+	$(CXX) $(OBS) -o $(NAME)
 	$(call print_colored, "[SUCCESS]", "./$(NAME)", "Ready")
 
 
 %.o: %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(OBS)
