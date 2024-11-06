@@ -1,6 +1,6 @@
-NAME := phonebook
+NAME := account
 
-SRCS := phonebook.cpp main.cpp contact.cpp
+SRCS := account.cpp tests.cpp
   
 CFLAGS := -Wall -Wextra -Werror -std=c++98
 
