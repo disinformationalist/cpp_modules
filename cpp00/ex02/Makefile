@@ -1,6 +1,6 @@
 NAME := account
 
-SRCS := account.cpp tests.cpp
+SRCS := Account.cpp tests.cpp
   
 CFLAGS := -Wall -Wextra -Werror -std=c++98
 
@@ -19,12 +19,12 @@ define print_colored
 endef
 
 .SILENT:
-$(call print_colored, "[SUCCESS]", "./$(NAME)", "Ready")
 
 all: $(NAME)
 
 $(NAME): $(OBS)
 	$(CXX) $(OBS) -o $(NAME)
+	$(call print_colored, "[SUCCESS]", "./$(NAME)", "Ready")
 
 
 %.o: %.cpp

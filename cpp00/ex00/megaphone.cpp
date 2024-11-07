@@ -13,6 +13,8 @@ int main(int ac, char **av)
 			j = -1;
 			while (av[i][++j])
 				std::cout << static_cast<char>(std::toupper(static_cast<unsigned char>(av[i][j])));
+			if (av[i + 1])
+			std::cout << " ";
 		}
 		std::cout << std::endl;
 	}
