@@ -1,8 +1,8 @@
-NAME := zombie
+NAME := info
 
-SRCS := main.cpp  Zombie.cpp randomChump.cpp newZombie.cpp
-  
-CFLAGS := -Wall -Wextra -Werror -std=c++98
+SRCS := main.cpp
+
+CFLAGS := -Wall -Werror -Wextra -std=c++98
 
 CXX := c++
 

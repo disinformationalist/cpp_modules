@@ -1,8 +1,8 @@
-NAME := zombie
+NAME := harl
 
-SRCS := main.cpp  Zombie.cpp randomChump.cpp newZombie.cpp
-  
-CFLAGS := -Wall -Wextra -Werror -std=c++98
+SRCS := main.cpp Harl.cpp
+
+CFLAGS := -Werror -Wextra -Wall -std=c++98
 
 CXX := c++
 
@@ -20,8 +20,8 @@ clean:
 	rm -rf $(OBS)
 
 fclean: clean
-	rm -rf	$(NAME)
-	
+	rm -rf $(NAME)
+
 re: fclean all
 
 .PHONY: all clean fclean re
