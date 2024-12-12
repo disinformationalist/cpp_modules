@@ -12,9 +12,9 @@ public:
 	ClapTrap&	operator=(const ClapTrap& other);	
 				~ClapTrap();
 
-	std::string		getName();
-	unsigned int	getHitPoints();
-	unsigned int	getAttackDamage();
+	std::string		getName() const;
+	unsigned int	getHitPoints() const;
+	unsigned int	getAttackDamage() const;
 	void			setAttackDamage(unsigned int damage);
 	
 	void		attack( const std::string& target);

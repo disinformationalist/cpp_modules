@@ -35,17 +35,17 @@ ClapTrap::~ClapTrap()
 
 /***get and set***/
 
-std::string	ClapTrap::getName()
+std::string	ClapTrap::getName() const
 {
 	return (_name);
 }
 
-unsigned int ClapTrap::getAttackDamage()
+unsigned int ClapTrap::getAttackDamage() const
 {
 	return (_attackDamage);
 }
 
-unsigned int ClapTrap::getHitPoints()
+unsigned int ClapTrap::getHitPoints() const
 {
 	return (_hitPoints);
 }
