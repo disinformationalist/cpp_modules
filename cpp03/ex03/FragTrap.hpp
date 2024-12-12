@@ -3,6 +3,7 @@
 
 #include "ClapTrap.hpp"
 
+//virtual keyword prevents multiple copies of base in multiple inheritence
 class FragTrap : virtual public ClapTrap
 {
 public:

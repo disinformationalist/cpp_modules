@@ -16,8 +16,7 @@ public:
 	unsigned int	getHitPoints();
 	unsigned int	getAttackDamage();
 	void			setAttackDamage(unsigned int damage);
-
-
+	
 	void		attack( const std::string& target);
 	void		takeDamage( unsigned int amount );
 	void		beRepaired (unsigned int amount );		

@@ -13,8 +13,10 @@ public:
 	Dog&	operator=( const Dog& other );
 			~Dog();		
 	void	makeSound() const;
+	Brain*	getBrain() const;
 
 private:
+	Brain *_brain;
 };
 
 #endif //DOG_HPP

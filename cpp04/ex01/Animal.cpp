@@ -43,3 +43,8 @@ void Animal::makeSound() const
 {
 	std::cout << "Random animal sound" << std::endl;
 }
+
+Brain* Animal::getBrain() const
+{
+	return (NULL);	
+}

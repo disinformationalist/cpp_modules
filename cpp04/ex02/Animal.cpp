@@ -39,7 +39,15 @@ std::string Animal::getType() const
 	return (_type);
 }
 
-void Animal::makeSound() const
+
+//these no longer needed here in the abstract
+/* void Animal::makeSound() const
 {
 	std::cout << "Random animal sound" << std::endl;
-}
+} */
+
+
+/* Brain* Animal::getBrain() const
+{
+	return (NULL);	
+} */

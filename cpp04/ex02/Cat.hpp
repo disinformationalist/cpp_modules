@@ -11,10 +11,13 @@ public:
 			Cat();
 			Cat( const Cat& other );
 	Cat&	operator=( const Cat& other );
-			~Cat();
+			~Cat();	
 	void	makeSound() const;
+	Brain*	getBrain() const;
+
 
 private:
+	Brain *_brain;
 };
 
 #endif //CAT_HPP
