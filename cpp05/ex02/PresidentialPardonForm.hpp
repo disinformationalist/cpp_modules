@@ -21,4 +21,4 @@ private:
 	std::string _target;
 };
 
-#endif // PRESIDENTIALPARDONFORM
+#endif // PRESIDENTIALPARDONFORM_HPP
