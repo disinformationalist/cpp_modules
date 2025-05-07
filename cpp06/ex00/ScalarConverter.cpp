@@ -1,5 +1,7 @@
 #include "ScalarConverter.hpp"
 
+//ortho, not really used here
+
 ScalarConverter::ScalarConverter()
 {
     std::cout << "ScalarConverter default constructor called" << std::endl;
@@ -11,21 +13,16 @@ ScalarConverter::ScalarConverter(const ScalarConverter& other)
 	std::cout << "ScalarConverter copy constructor called" << std::endl;
 }
 
-ScalarConverter::~ScalarConverter()
-{
-    std::cout << "ScalarConverter destructor called" << std::endl;
-}
-
-
-
-
-
-
 ScalarConverter& ScalarConverter::operator=(const ScalarConverter& other)
 {
-    (void)other;
+	(void)other;
 	std::cout << "ScalarConverter assignment operator called" << std::endl;
     return *this;
+}
+
+ScalarConverter::~ScalarConverter()
+{
+	std::cout << "ScalarConverter destructor called" << std::endl;
 }
 
 //converter

@@ -1,15 +1,41 @@
 #ifndef ITER_HPP
 # define ITER_HPP
 
-template <typename T>
+#include <cstddef>
+#include <iostream>
 
-inline void	iter(T* arr, const T& len, )
+
+template <typename T, typename F>
+
+void	iter(T* arr, size_t len, F f)
 {
-	T temp = a;
-	a = b;
-	b = temp;
+	for (size_t i = 0; i < len; i++)
+		f(arr[i]);
+}
+
+template <typename T, typename F>
+
+void	iter(const T* arr, size_t len, F f)
+{
+	for (size_t i = 0; i < len; i++)
+		f(arr[i]);
 }
 
 
+//templated functions
+
+template <typename T>
+
+void add_two(T& x)
+{
+	x += 2;
+}
+
+template <typename T>
+
+void	print_val(const T& val)
+{
+	std::cout << val << std::endl;
+}
 
 #endif // ITER_HPP

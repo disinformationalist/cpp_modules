@@ -28,8 +28,7 @@ typedef enum e_type
 class ScalarConverter
 {
 public:
-
-static void convert(const std::string& in);
+	static void convert(const std::string& in);
 
 private:
 	ScalarConverter();
