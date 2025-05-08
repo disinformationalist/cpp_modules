@@ -59,11 +59,8 @@ int main()
 	
 	Intern c;
 	
-	Intern c = a;
+	c = a;
 
-	
-	
-	
 	
 	
 	Intern namelessIntern;
